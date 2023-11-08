@@ -1,0 +1,26 @@
+<div class="login">
+    <div class="inputCredentials">
+        <mat-form-field>
+            <mat-label>Email </mat-label>
+            <input id="email" matInput [(ngModel)]="loginCredentials.email" name="email" #email="ngModel" required
+                email>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Hasło</mat-label>
+            <input id="password" matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="loginCredentials.password"
+                name="password" required>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+        </mat-form-field>
+        <a id="resetLink" (click)="onResetClick()">zresetuj hasło</a>
+
+    </div>
+    <div class="loginCheck">
+        <div class="loginInfo">
+            <p *ngIf="responseMessage">{{ responseMessage }}</p>
+        </div>
+        <button id="login" mat-raised-button (click)="login()">Zaloguj się</button>
+    </div>

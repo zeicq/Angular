@@ -1,0 +1,59 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  #resetLink{
+    text-align: right;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  #resetLink:hover {
+    color: #c06262;}
+
+   .ng-star-inserted{
+      font-size: 20px;
+    }
+  
+.login{
+  min-height: 100vh;
+}
+
+.loginCheck{
+  text-align: center;
+padding: 2rem;
+}
+.loginInfo{
+  height: 40px;
+}
+.inputCredentials{
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+ }
+
+ #login{
+  height: 65px !important;
+  width: 160px!important;
+  color:#fff;
+  background-color: black;
+  }
+  #login:hover{
+    background-color: rgba(34, 34, 34, 0.923);
+  }
+
+  
