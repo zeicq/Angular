@@ -1,0 +1,28 @@
+<div class="reset" *ngIf="!showResetDiv">
+    <div class="header">
+        <p> Zresetuj Hasło</p>
+    </div>
+    <div class="resetForm">
+        <mat-form-field>
+            <mat-label>Email </mat-label>
+            <input id="email" [(ngModel)]="loginCredentials.email" matInput name="email" required email>
+
+        </mat-form-field>
+        <div class="divRelative">
+            <button id="infoEmail"
+                matTooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatum omnis obcaecati earum, dolores eligendi ea pariatur vero, deserunt ad doloribus soluta harum, quam cum similique hic animi autem ab!"
+                matTooltipPosition="right" mat-button>
+                <span class="material-symbols-outlined">
+                    help
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <button class="btn" id="reset" (click)="reset()" mat-raised-button>Resetuj</button>
+
+</div>
+
+<div class="sendEmail" *ngIf="showResetDiv">
+    <p> Na podany adres e-mail została wysłana wiadomość z linkiem do resetu hasła</p>
+</div>
