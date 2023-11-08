@@ -1,0 +1,104 @@
+
+.material-symbols-outlined {
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' -25,
+    'opsz' 48
+  }
+  .error-button {
+    color: red;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+  }
+#mat-tab-content-0-1 > div > app-register > div > div.inputCredentials > mat-form-field.mat-mdc-form-field.ng-tns-c1205077789-2.mat-mdc-form-field-type-mat-input.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted
+{
+  position: relative;
+}
+#mat-tab-content-0-1 > div > app-register > div > div.inputCredentials > mat-form-field.mat-mdc-form-field.ng-tns-c1205077789-3.mat-mdc-form-field-type-mat-input.mat-mdc-form-field-has-icon-suffix.mat-form-field-appearance-fill.mat-form-field-hide-placeholder.mat-primary.ng-star-inserted{
+  position: relative;
+}
+
+#infoEmail{
+  position: absolute;
+  bottom: 23px;
+  height: 55px;
+  right: -70px;
+}
+
+#infoPassword{
+  position: absolute;
+  bottom: 43px;
+  height: 55px;
+  right: -70px;
+  }
+
+  #infoPasswordRepeat{
+    position: absolute;
+    bottom: 23px;
+    height: 55px;
+    right: -70px;
+    }
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+.divRelative{
+  position: relative;
+}
+
+.login{
+  min-height: 100vh;
+}
+
+.loginCheck{
+  text-align: center;
+padding: 2rem;
+}
+.loginInfo{
+  height: 40px;
+}
+.inputCredentials{
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+ }
+
+ #register{
+  color:#fff;
+  background-color: black;
+  height: 65px !important;
+  width: 160px!important;
+  }
+  #register:hover{
+    background-color: rgba(34, 34, 34, 0.923);
+  }
+ 
+  .mat-mdc-raised-button.mdc-ripple-upgraded--background-focused, .mat-mdc-raised-button:not(.mdc-ripple-upgraded):focus{
+    box-shadow: (--mdc-protected-button-focus-container-elevation, 0px 2px 4px -1px rgba(255, 255, 255, 0.2), 0px 4px 5px 0px rgb(193 187 187 / 42%), 0px 1px 10px 0px rgba(198, 170, 170, 0.12))
+  }
+
+  

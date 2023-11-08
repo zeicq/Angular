@@ -1,0 +1,73 @@
+<div class="login">
+    <div class="inputCredentials">
+
+        <mat-form-field>
+            <mat-label>Email </mat-label>
+            <input id="email" matInput [(ngModel)]="loginCredentials.email" name="email" #email="ngModel" required
+                email>
+
+        </mat-form-field>
+        <div class="divRelative">
+            <button id="infoEmail" class="shake-animation" mat-button (click)="tooltip?.toggle()"
+                [matTooltip]="emailError" *ngIf="showEmailError" matTooltipPosition="right"
+                [class.error-button]="showEmailError">
+                <span class="material-symbols-outlined">
+                    error
+                </span>
+            </button>
+        </div>
+
+        <div fxFlex>
+            <!--password input filed-->
+            <mat-form-field style="width: 100%" [color]="passwordComponent.color">
+                <mat-label>Hasło</mat-label>
+                <mat-pass-toggle-visibility #toggle matSuffix></mat-pass-toggle-visibility>
+                <input matInput #password [type]="toggle.type" required [(ngModel)]="loginCredentials.password"
+                    name="password" required>
+
+            </mat-form-field>
+            <mat-password-strength #passwordComponent (onStrengthChanged)="onStrengthChanged($event)"
+                [password]="password.value">
+            </mat-password-strength>
+        </div>
+
+
+
+
+
+        <div class="divRelative">
+            <button id="infoPassword" class="shake-animation" mat-button (click)="tooltip?.toggle()"
+                [matTooltip]="passwordError" *ngIf="showPasswordError" matTooltipPosition="right"
+                [class.error-button]="showPasswordError">
+                <span class="material-symbols-outlined">
+                    error
+                </span>
+            </button>
+        </div>
+        <mat-form-field>
+            <mat-label>Wprowadz ponownie hasło</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="loginCredentials.repeatPassword"
+                name="repeatPassword" required>
+        </mat-form-field>
+        <div class="divRelative">
+            <button id="infoPasswordRepeat" class="shake-animation" mat-button (click)="tooltip?.toggle()"
+                [matTooltip]="repeatPasswordError" *ngIf="showRepeatPasswordError" matTooltipPosition="right"
+                [class.error-button]="showRepeatPasswordError">
+                <span class="material-symbols-outlined">
+                    error
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="loginCheck">
+        <div class="loginInfo">
+            <p *ngIf="responseMessage === 'OK'">OK</p>
+            <p *ngIf="responseMessage === 'Błędne hasło'">Błędne hasło</p>
+            <button id="register" mat-raised-button (click)="newUser()">Zarejestruj</button>
+        </div>
+    </div>
+
+
+
+
+</div>
