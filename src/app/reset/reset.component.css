@@ -1,0 +1,71 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+ 
+.reset{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header{
+  margin-bottom: 5rem;
+}
+
+p{
+  font-size: 25px;
+  color: grey;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#infoEmail{
+  position: absolute;
+  bottom: 23px;
+  height: 55px;
+  right: -70px;
+}
+
+
+.resetForm{
+  display: flex;;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  width:40vh;
+  margin: 2rem 0;
+}
+.divRelative{
+  position: relative;
+}
+
+.btn{
+  color:#fff;
+  background-color: black;
+  height: 65px !important;
+  width: 160px!important;
+}
+#reset:hover{
+  background-color: rgba(34, 34, 34, 0.923);
+}
+
+.sendEmail{
+  display: flex;
+  align-items: center;
+  padding-top: 14rem;
+}
