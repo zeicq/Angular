@@ -1,1 +1,126 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100vh;
+}
+html{
+  --mdc-filled-text-field-focus-label-text-color:rgb(27, 27, 27);
+}
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+  color: #000000cf !important;
+}
+.mat-mdc-tab.mdc-tab--active:hover .mdc-tab-indicator__content--underline,.mat-mdc-tab.mdc-tab--active .mdc-tab__ripple::before, .mat-mdc-tab.mdc-tab--active .mat-ripple-element,.mat-mdc-tab .mdc-tab-indicator__content--underline {
+  border-color: #222222 !important;
+}
+body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+  
+}
+
+.mat-typography{
+  background-color: #f0f0f0; 
+  background-image: url("./assets/AdobeStock_265997832.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body > app-root > div.content{
+  background-color: #fffffff2;
+  height: 50vh;
+  border-radius: 0.2rem;
+}
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+.material-symbols-outlined{
+  font-size: 40px !important;
+}
+
+.mdc-tab{
+  border-bottom: .1px solid rgba(0, 0, 0, 0.583) !important  ;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+  border-bottom-color: #000000be !important;
+}
+.mat-mdc-tab-label-container{
+  padding: 1rem 9rem 0 9rem !important;
+  }
+
+  #mat-tab-content-0-1 > div > app-register > div > div.inputCredentials > div:nth-child(3) > mat-password-strength > mat-progress-bar{
+    width: 200px;
+   margin-bottom: 15px;
+  }
+
+  .mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-height: 10px !important;
+    --mdc-linear-progress-track-height: 10px !important;
+
+    
+     }
+     .mat-mdc-progress-bar.mat-accent{
+      --mdc-linear-progress-active-indicator-color: #ff4081;
+      --mdc-linear-progress-track-color: rgb(132 132 132 / 25%);
+     }
+
+     .mdc-linear-progress__bar-inner {
+      border-color: #353535 !important;
+  }
+
+  .mat-mdc-progress-bar.mat-warn {
+    --mdc-linear-progress-active-indicator-color: #120f0f8f;
+    --mdc-linear-progress-track-color: rgb(34 24 23 / 25%);
+}
+
+#logo{
+  margin-top: 2rem;
+  background-color: #000000ed;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+
+}
+.log{
+}
+
+.shake-animation {
+  animation: shake 0.3s;
+  color: #cb4a4a !important;
+}
+
+
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+
+
+@media screen and (max-width: 1700px) {
+  .content{
+    width: 100vh;
+    padding: 0 2rem;
+    margin: 2rem;
+    height: 100vh;
+  }
+  }
+@media screen and (max-width: 1100px) {
+      
+  .mat-mdc-tab-label-container{
+    padding: 1rem 13rem 1px 13rem !important;
+  }
+}
+
